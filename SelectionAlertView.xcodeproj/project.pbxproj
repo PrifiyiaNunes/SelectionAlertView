@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D56D4892845D39C000AB6CF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56D4882845D39C000AB6CF /* Extension.swift */; };
+		3D56D49B2845D4D3000AB6CF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56D49A2845D4D3000AB6CF /* ViewModel.swift */; };
+		3D56D4A02845D77E000AB6CF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56D49F2845D77D000AB6CF /* ViewManager.swift */; };
 		3D582AE22844A16400DC76C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582AE12844A16400DC76C1 /* AppDelegate.swift */; };
-		3D582AE42844A16400DC76C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582AE32844A16400DC76C1 /* SceneDelegate.swift */; };
 		3D582AE62844A16400DC76C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582AE52844A16400DC76C1 /* ViewController.swift */; };
 		3D582AE92844A16400DC76C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D582AE72844A16400DC76C1 /* Main.storyboard */; };
 		3D582AEC2844A16400DC76C1 /* SelectionAlertView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D582AEA2844A16400DC76C1 /* SelectionAlertView.xcdatamodeld */; };
@@ -16,6 +18,7 @@
 		3D582AF12844A16700DC76C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D582AEF2844A16700DC76C1 /* LaunchScreen.storyboard */; };
 		3D582AFC2844A16700DC76C1 /* SelectionAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582AFB2844A16700DC76C1 /* SelectionAlertViewTests.swift */; };
 		3D582B072844A16700DC76C1 /* SelectionAlertViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582B062844A16700DC76C1 /* SelectionAlertViewUITests.swift */; };
+		3D582B182844BD2B00DC76C1 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D582B172844BD2B00DC76C1 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D56D4882845D39C000AB6CF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3D56D49A2845D4D3000AB6CF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3D56D49F2845D77D000AB6CF /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		3D582ADE2844A16400DC76C1 /* SelectionAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D582AE12844A16400DC76C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D582AE32844A16400DC76C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D582AE52844A16400DC76C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D582AE82844A16400DC76C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D582AEB2844A16400DC76C1 /* SelectionAlertView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SelectionAlertView.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		3D582B022844A16700DC76C1 /* SelectionAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D582B062844A16700DC76C1 /* SelectionAlertViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAlertViewUITests.swift; sourceTree = "<group>"; };
 		3D582B082844A16700DC76C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D582B172844BD2B00DC76C1 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D56D48D2845D3DC000AB6CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D582AE52844A16400DC76C1 /* ViewController.swift */,
+				3D582B172844BD2B00DC76C1 /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D56D4912845D3EA000AB6CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D582AE72844A16400DC76C1 /* Main.storyboard */,
+				3D582AEF2844A16700DC76C1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D56D4922845D3F5000AB6CF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D582AED2844A16700DC76C1 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D56D4932845D3FE000AB6CF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3D582AEA2844A16400DC76C1 /* SelectionAlertView.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3D56D4942845D404000AB6CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D56D4882845D39C000AB6CF /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3D56D4982845D419000AB6CF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3D582AE12844A16400DC76C1 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3D56D4992845D474000AB6CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D56D49A2845D4D3000AB6CF /* ViewModel.swift */,
+				3D56D49F2845D77D000AB6CF /* ViewManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3D582AD52844A16400DC76C1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +166,14 @@
 		3D582AE02844A16400DC76C1 /* SelectionAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				3D582AE12844A16400DC76C1 /* AppDelegate.swift */,
-				3D582AE32844A16400DC76C1 /* SceneDelegate.swift */,
-				3D582AE52844A16400DC76C1 /* ViewController.swift */,
-				3D582AE72844A16400DC76C1 /* Main.storyboard */,
-				3D582AED2844A16700DC76C1 /* Assets.xcassets */,
-				3D582AEF2844A16700DC76C1 /* LaunchScreen.storyboard */,
+				3D56D4982845D419000AB6CF /* Delegate */,
+				3D56D4992845D474000AB6CF /* Model */,
+				3D56D4912845D3EA000AB6CF /* View */,
+				3D56D48D2845D3DC000AB6CF /* Controller */,
+				3D56D4922845D3F5000AB6CF /* Resource */,
+				3D56D4932845D3FE000AB6CF /* CoreData */,
+				3D56D4942845D404000AB6CF /* Utilities */,
 				3D582AF22844A16700DC76C1 /* Info.plist */,
-				3D582AEA2844A16400DC76C1 /* SelectionAlertView.xcdatamodeld */,
 			);
 			path = SelectionAlertView;
 			sourceTree = "<group>";
@@ -261,10 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D56D4892845D39C000AB6CF /* Extension.swift in Sources */,
 				3D582AEC2844A16400DC76C1 /* SelectionAlertView.xcdatamodeld in Sources */,
 				3D582AE62844A16400DC76C1 /* ViewController.swift in Sources */,
 				3D582AE22844A16400DC76C1 /* AppDelegate.swift in Sources */,
-				3D582AE42844A16400DC76C1 /* SceneDelegate.swift in Sources */,
+				3D56D49B2845D4D3000AB6CF /* ViewModel.swift in Sources */,
+				3D56D4A02845D77E000AB6CF /* ViewManager.swift in Sources */,
+				3D582B182844BD2B00DC76C1 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q9FV3GHT;
 				INFOPLIST_FILE = SelectionAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q9FV3GHT;
 				INFOPLIST_FILE = SelectionAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
